@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Taco Ekkel — Leadership Coaching</title>
+    <meta
+      name="description"
+      content=""
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      tailwind = {
+        config: {
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ['"Work Sans"', "ui-sans-serif", "system-ui"],
+                serif: ['"Instrument Serif"', "serif"],
+              },
+              colors: {
+                night: "#050505",
+                ash: "#d1d5db",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-night text-white font-sans antialiased">
+    <main class="min-h-screen px-6 py-16 md:px-10">
+      <div
+        class="mx-auto flex max-w-4xl flex-col gap-24 md:gap-28 lg:gap-32"
+        role="document"
+      >
+        <section class="space-y-8 md:space-y-10">
+          <p class="text-sm uppercase tracking-[0.3em] text-white/40">
+            Leadership Coaching
+          </p>
+          <h1
+            class="text-5xl font-serif tracking-tight text-white md:text-6xl lg:text-7xl"
+          >
+            Taco Ekkel
+          </h1>
+          <p class="max-w-2xl text-lg text-white/70 md:text-xl">
+            I help entrepreneurs and leaders work through the knots that slow
+            them down so they can lead with clarity and feel good doing it.
+          </p>
+        </section>
+
+        <section class="space-y-6 border-t border-white/10 pt-10 md:pt-12">
+          <h2 class="text-3xl font-serif text-white md:text-4xl">What I do</h2>
+          <p class="text-lg leading-relaxed text-white/70 md:text-xl">
+            I help entrepreneurs and leaders work through their daily
+            challenges, and in the process deepen their leadership style.
+          </p>
+          <p class="text-lg leading-relaxed text-white/70 md:text-xl">
+            Clients have told me I bring clarity, give words to what’s
+            underneath, and do so in a clear-cut but gentle way. And, that this
+            helps them see new paths forward and feel happier and more effective
+            as a result.
+          </p>
+        </section>
+
+        <section class="space-y-6 border-t border-white/10 pt-10 md:pt-12">
+          <h2 class="text-3xl font-serif text-white md:text-4xl">How I work</h2>
+          <ol
+            class="space-y-5 text-lg leading-relaxed text-white/70 md:text-xl md:space-y-6"
+          >
+            <li class="flex gap-4">
+              <span class="text-white/30">1.</span>
+              <span>
+                Subconsciously we often know what’s holding us back—but everyone
+                needs someone to help them bring that to the surface, explore
+                it, and own the resulting change.
+              </span>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-white/30">2.</span>
+              <span>
+                Leaning into your unique qualities and quirks gives you
+                permission to unlock and own more of yourself in your role,
+                making you a better leader and your life more fun.
+              </span>
+            </li>
+          </ol>
+        </section>
+
+        <section class="space-y-6 border-t border-white/10 pt-10 md:pt-12">
+          <h2 class="text-3xl font-serif text-white md:text-4xl">
+            I'd love to meet you
+          </h2>
+          <p class="text-lg leading-relaxed text-white/70 md:text-xl">
+            Get in touch for a free session to discuss your goals and to get to
+            know each other a bit. If we decide to move on, we do sessions of
+            one hour at a real-life place of your choosing. Sessions costs
+            €150, invoiced monthly.
+          </p>
+        </section>
+
+        <section class="space-y-8 border-t border-white/10 pt-10 md:pt-12">
+          <div class="space-y-2">
+            <h2 class="text-3xl font-serif text-white md:text-4xl">
+              Get in touch
+            </h2>
+            <p class="text-lg text-white/60 md:text-xl">
+              Drop your details below and I'll reach out.
+            </p>
+          </div>
+          <form class="grid gap-6 md:max-w-xl" method="post" action="#">
+            <label class="grid gap-2 text-sm uppercase tracking-[0.2em]">
+              <span class="text-white/60">Your name</span>
+              <input
+                type="text"
+                name="name"
+                autocomplete="name"
+                required
+                class="rounded-none border border-white/15 bg-white/5 px-4 py-3 text-base text-white shadow-sm transition focus:border-white/40 focus:outline-none focus:ring-2 focus:ring-white/30"
+                placeholder="Your name"
+              />
+            </label>
+            <label class="grid gap-2 text-sm uppercase tracking-[0.2em]">
+              <span class="text-white/60"
+                >How would you like me to get in touch?</span
+              >
+              <textarea
+                name="contact_preference"
+                rows="4"
+                class="rounded-none border border-white/15 bg-white/5 px-4 py-3 text-base text-white shadow-sm transition focus:border-white/40 focus:outline-none focus:ring-2 focus:ring-white/30"
+                placeholder="Share how you prefer to be contacted (email, phone, etc.)"
+                required
+              ></textarea>
+            </label>
+            <button
+              type="submit"
+              class="w-full items-center justify-center bg-white px-5 py-3 text-base font-semibold uppercase tracking-[0.25em] text-night transition hover:bg-ash hover:text-night md:w-max"
+            >
+              Send
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
